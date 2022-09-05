@@ -340,7 +340,7 @@ class AppProductos:
             if confirmacion1 and confirmacion2:
                 f_vencimiento = fechas.fecha_vencimiento(dia, mes, año)
                 self.base_datos.insertar_producto(self.codigo,self.marca.get(),self.nombre.get(),self.descripcion.get(),self.f_creacion,f_vencimiento)
-                self.mensaje['text']= 'Producto {} a sido agregado'.format(self.nombre.get())
+                self.mensaje['text']= 'Producto {} ha sido agregado'.format(self.nombre.get())
                 self.limpiar_campos()
             elif not confirmacion1 and confirmacion2:
                 self.mensaje['text']='Espacios incompletos'
